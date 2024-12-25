@@ -1,0 +1,612 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* General */
+header {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(55, 67, 83);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+}
+
+h3 {
+    margin: 0;
+}
+
+.nav-bar {
+    width: 80%;
+
+}
+
+.ul-nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.li-nav {
+    margin-left: 30px;
+    padding: 15px;
+    border-radius: 22.5px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.li-nav:hover {
+    outline: 1px solid white;
+}
+
+.barra {
+    display: none;
+}
+
+.barra .linea {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.nav-bar.active {
+    height: auto;
+    z-index: 2;
+    
+}
+
+.nav-bar .ul-nav-bar .li-nav.active {
+    color: black;
+    background-color: rgb(251, 251, 59);
+}
+
+
+
+/*MAIN*/
+main{
+    height: 100%;
+    width: 100%;
+
+}
+.baner-principal{
+    background-image: url('img/shrimp-tortillas-6604420_1920 (1).jpg');
+    background-size: cover;
+    height: calc(100vh - 60px);
+    
+
+}
+
+.banner-title{
+    width: 50%;
+    height: 200px;
+    background-color: white;
+    padding: 20px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-20%);
+}
+.banner-img img{
+    width: 24px;
+
+}
+.banner-img{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.banner-info{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+
+}
+.banner-info h4{
+    color: gray;
+    font-weight: lighter;
+}
+.banner-info h1{
+    font-size: 2.5rem;
+}
+
+/*SERVICIOS*/
+.sec-servicios{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-services{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 180px 180px 180px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.servicio img{
+    width: 24px;
+}
+.servicio{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    border: 2px solid rgb(218, 215, 215);
+    padding: 15px;
+    border-radius: 15px;
+}
+.service-info{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.service-info h4{
+    color: rgb(192, 190, 190);
+    font-weight: lighter;
+    font-size: 0.8em;
+}
+.service-info h3{
+    font-size: 1.3rem;
+    color: rgb(90, 90, 90);
+}
+
+/*SECCION DE DIFERENCIAS*/
+.sect-differents{
+    background-color: rgb(235, 235, 235);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container-differents{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-diffrent{
+    height: 70px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 14px;
+    padding: 14px;
+}
+.container-diffrent h3{
+    color: gray;
+    font-weight: 500;
+}
+.container-diffrent h4{
+    color: rgb(151, 151, 151);
+    font-weight: lighter;
+    font-size: 12px;
+}
+.sect-differents button, .sect-estadistica button{
+    background-color: black;
+    color: white;
+    padding: 5px 10px 5px 10px;
+}
+
+/*SECCION DE ESTADISTICAS*/
+
+.sect-estadistica{
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.art-estadistica{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.art-estadistica h2{
+    font-size: 2.5rem;
+}
+
+.container-estadisticas{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.estadistica{
+    width: 180px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.estadistica h3{
+    font-size: 2rem;
+    color: rgb(136, 136, 136);
+    font-weight: lighter;
+}
+.estadistica h4{
+    font-size: 0.8rem;
+    color: rgb(175, 175, 175);
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: rgb(55, 67, 83);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 30px 30px 10px 30px;
+}
+
+.sect-iconos{
+    color: white;
+    margin-bottom: 40px;
+}
+.container-iconos{
+    margin-top: 20px;
+}
+.container-secciones{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.secciones{
+    color: white;
+    font-size: 0.7rem;
+
+
+}
+
+.secciones li{
+    margin-top: 30px;
+    list-style: none;
+    font-weight: lighter;
+    color: rgb(168, 166, 166);
+}
+.secciones:nth-child(3){
+    width: 400px;
+}
+.container-input{
+    margin: 30px 0 30px 0;
+    display: flex;
+}
+.container-input input{
+    background-color: transparent;
+    border: 2px solid rgb(201, 201, 201);
+    width: 70%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 14px;
+    margin-right: 20px;
+}
+.container-input button{
+    width: 35%;
+    border: none;
+    border-radius: 14px;
+}
+
+/* Responsive */
+@media (max-width: 990px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-bar{
+        width: 50%;
+        display: flex;
+        justify-content: end;
+    }
+    .nav-bar.active{
+        display: flex;
+        justify-content: end;
+    }
+    .barra {
+        display: block;
+        cursor: pointer;
+    }
+    .ul-nav-bar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(55, 67, 83, 0.9);
+        width: 30%;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        
+    }
+
+    .nav-bar.active .ul-nav-bar {
+        display: flex;
+    }
+
+    .li-nav {
+        margin: 10px 0px;
+        padding: 10px 10px;
+        width: 80%;
+        text-align: center;
+    }
+    .banner-img img{
+        width: 16px;
+    }
+    
+    .banner-info h1{
+        font-size: 1.8rem;
+    }
+
+
+    .sec-servicios{
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .container-services{
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+    .servicio{
+        height: 150px;
+    }
+    .service-info h4{
+        color: rgb(192, 190, 190);
+        font-weight: lighter;
+        font-size: 0.8em;
+    }
+    .service-info h3{
+        font-size: 1.3rem;
+        color: rgb(90, 90, 90);
+    }
+
+    .container-differents{
+        width: 90%;
+    }
+    .container-diffrent{
+        height: 70px;
+        width: 140px;
+    }
+    .container-diffrent h3{
+        color: gray;
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .container-diffrent h4{
+        color: rgb(151, 151, 151);
+        font-weight: lighter;
+        text-align: center;
+        font-size: 12px;
+    }
+
+
+    .art-estadistica{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .art-estadistica h2{
+        font-size: 1.8rem;
+    }
+    .container-estadisticas{
+        margin-top: 10px;
+    }
+    .estadistica{
+        width: 150px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+    }
+    .estadistica h3{
+        font-size: 1.5rem;
+        color: rgb(136, 136, 136);
+        font-weight: lighter;
+    }
+    .estadistica h4{
+        font-size: 0.8rem;
+        color: rgb(175, 175, 175);
+    }
+
+    /*FOOTER*/
+
+    .secciones{
+        color: white;
+        font-size: 0.7rem;
+    }
+    .secciones:nth-child(3){
+        width: 300px;
+    }
+    .container-input input{
+        background-color: transparent;
+        border: 2px solid rgb(201, 201, 201);
+        width: 70%;
+        height: 35px;
+        padding: 10px;
+        border-radius: 14px;
+        margin-right: 20px;
+    }
+    .container-input button{
+        width: 35%;
+        border: none;
+        border-radius: 14px;
+    }
+}
+
+@media (max-width: 542px) {
+    .banner-img img{
+        width: 16px;
+    }
+    .banner-info{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    .banner-info h1{
+        font-size: 1.5rem;
+    }
+    .sec-servicios{
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .sec-servicios h2{
+        font-size: 1.4rem;
+    }
+    .container-services{
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+    .servicio{
+        height: 150px;
+    }
+    .service-info h4{
+        color: rgb(192, 190, 190);
+        font-weight: lighter;
+        font-size: 0.8em;
+    }
+    .service-info h3{
+        font-size: 1.1rem;
+        color: rgb(90, 90, 90);
+    }
+    .sect-differents h2{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .container-differents{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        justify-items: center;
+    }
+
+
+    .art-estadistica{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .art-estadistica h2{
+        font-size: 1.5rem;
+    }
+    .container-estadisticas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        justify-items: center;
+        margin-top: 10px;
+    }
+    .estadistica{
+        width: 130px;
+        height: 60px;
+    }
+    .estadistica h3{
+        font-size: 1.3rem;
+        color: rgb(136, 136, 136);
+        font-weight: lighter;
+    }
+    .estadistica h4{
+        font-size: 0.8rem;
+        color: rgb(175, 175, 175);
+    }
+
+    /*FOOTER*/
+    footer{
+        padding: 10px;
+    }
+    .secciones{
+        color: white;
+        font-size: 0.6rem;
+    }
+    .secciones:nth-child(3){
+        width: 150px;
+    }
+    .container-input{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .container-input input{
+        background-color: transparent;
+        border: 2px solid rgb(201, 201, 201);
+        width: 100%;
+        height: 35px;
+        padding: 10px;
+        border-radius: 14px;
+        margin: 0;
+    }
+    .container-input button{
+        width: 100%;
+        border: none;
+        border-radius: 14px;
+        padding: 8px;
+        margin-top: 10px;
+    }
+}
